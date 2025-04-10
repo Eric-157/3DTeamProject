@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Movement : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
-    private float speed = 2.0f;
+    private float speed = 8.0f;
     public float horizontalInput;
     public float verticalInput;
     public Rigidbody rb;
+
+    public int itemsFound;
 
     // Start is called before the first frame update
     void Start()

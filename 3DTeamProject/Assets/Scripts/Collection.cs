@@ -2,14 +2,19 @@ using UnityEngine;
 
 public class Collection : MonoBehaviour
 {
-    public static int itemsFound = 0;
+    public GameObject playerReference;
+    private PlayerMovement playerScript;
 
+    void Start()
+    {
+        playerScript = playerReference.GetComponent<PlayerMovement>();
+    }
     private void OnMouseDown()
     {
         if (CompareTag("item"))
         {
-            itemsFound++;
-            Debug.Log("Items Found: " + itemsFound);
+            playerScript.itemsFound++;
+            Debug.Log("Items Found: " + playerScript.itemsFound);
             Destroy(gameObject);
         }
     }

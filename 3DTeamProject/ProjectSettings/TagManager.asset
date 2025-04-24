@@ -8,6 +8,7 @@ TagManager:
   - item
   - trigger
   - lock
+  - Enemy
   layers:
   - Default
   - TransparentFX

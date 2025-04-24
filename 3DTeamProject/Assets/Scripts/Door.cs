@@ -10,6 +10,8 @@ public class Door : MonoBehaviour
     public GameObject playerReference;
     private PlayerMovement playerScript;
     public int ItemsNeeded;
+    private bool locked = true;
+    public GameObject doorLock;
 
     private void Start()
     {
@@ -21,7 +23,13 @@ public class Door : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (ItemsNeeded == playerScript.itemsFound)
+        if (ItemsNeeded == playerScript.itemsFound && locked == true)
+        {
+            locked = false;
+            Destroy(doorLock);
+
+        }
+        else if (locked == false)
         {
             if (CompareTag("door"))
             {

@@ -6,6 +6,7 @@ public class Jumpscare : MonoBehaviour
     public GameObject objectToSpawn;     // Assign in Inspector
     public float spawnDistanceBehind = 2f;
     public float lookDuration = 2f;
+    public bool animDone = true;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -16,6 +17,7 @@ public class Jumpscare : MonoBehaviour
 
             Vector3 spawnPosition = playerRoot.position - playerRoot.forward * spawnDistanceBehind;
             GameObject spawnedObject = Instantiate(objectToSpawn, spawnPosition, Quaternion.identity);
+            animDone = false;
 
             Camera playerCamera = playerRoot.GetComponentInChildren<Camera>();
             if (playerCamera != null)
@@ -42,5 +44,6 @@ public class Jumpscare : MonoBehaviour
     {
         yield return new WaitForSeconds(delay);
         camMove.allowMouseControl = true;
+        animDone = true;
     }
 }

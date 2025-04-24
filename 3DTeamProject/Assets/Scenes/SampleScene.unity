@@ -569,6 +569,7 @@ MonoBehaviour:
   horizontalInput: 0
   verticalInput: 0
   rb: {fileID: 1239878036}
+  jumpscareTrigger: {fileID: 1620224850}
   itemsFound: 0
 --- !u!4 &1239878034
 Transform:
@@ -840,6 +841,7 @@ MonoBehaviour:
   objectToSpawn: {fileID: 1508433200138743276, guid: 3ecf863a3b435354dada9250752ce81e, type: 3}
   spawnDistanceBehind: 2
   lookDuration: 2
+  animDone: 1
 --- !u!1 &1727997809
 GameObject:
   m_ObjectHideFlags: 0
@@ -872,6 +874,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerReference: {fileID: 1239878030}
   ItemsNeeded: 1
+  doorLock: {fileID: 1310668333}
 --- !u!4 &1727997811
 Transform:
   m_ObjectHideFlags: 0

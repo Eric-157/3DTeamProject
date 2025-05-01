@@ -361,13 +361,19 @@ PrefabInstance:
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb001190ae2138e41b919ce3ae6162f7, type: 3}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 --- !u!1001 &926163919
 =======
+=======
+>>>>>>> Stashed changes
 <<<<<<< HEAD
 --- !u!1001 &953536123
 =======
 --- !u!1001 &926163919
 >>>>>>> f25b63c03f601ae6ea3280cb623c4eddf2117f7d
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -377,7 +383,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 <<<<<<< HEAD
     - target: {fileID: -8679921383154817045, guid: 211e621201be0074798736b17a3aeec1, type: 3}
       propertyPath: m_LocalScale.x
@@ -444,6 +453,9 @@ PrefabInstance:
       value: conveyerbeltfinal
       objectReference: {fileID: 0}
 =======
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     - target: {fileID: -8679921383154817045, guid: 95898f21be0dab347a47e8e765079032, type: 3}
       propertyPath: m_LocalScale.x
@@ -506,6 +518,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 4506e47b37b29524f9a7422d347d6395, type: 2}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> f25b63c03f601ae6ea3280cb623c4eddf2117f7d
+>>>>>>> Stashed changes
 =======
 >>>>>>> f25b63c03f601ae6ea3280cb623c4eddf2117f7d
 >>>>>>> Stashed changes
@@ -514,13 +530,19 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_SourcePrefab: {fileID: 100100000, guid: 95898f21be0dab347a47e8e765079032, type: 3}
 =======
+=======
+>>>>>>> Stashed changes
 <<<<<<< HEAD
   m_SourcePrefab: {fileID: 100100000, guid: 211e621201be0074798736b17a3aeec1, type: 3}
 =======
   m_SourcePrefab: {fileID: 100100000, guid: 95898f21be0dab347a47e8e765079032, type: 3}
 >>>>>>> f25b63c03f601ae6ea3280cb623c4eddf2117f7d
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 --- !u!1 &974326170
 GameObject:
@@ -946,11 +968,17 @@ SceneRoots:
   - {fileID: 1548780234}
   - {fileID: 1863708682}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   - {fileID: 926163919}
 =======
+=======
+>>>>>>> Stashed changes
 <<<<<<< HEAD
   - {fileID: 953536123}
 =======
   - {fileID: 926163919}
 >>>>>>> f25b63c03f601ae6ea3280cb623c4eddf2117f7d
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes

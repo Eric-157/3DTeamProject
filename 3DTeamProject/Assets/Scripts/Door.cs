@@ -10,7 +10,7 @@ public class Door : MonoBehaviour
     public GameObject playerReference;
     private PlayerMovement playerScript;
     public int ItemsNeeded;
-    private bool locked = true;
+    private bool locked = false;
     public GameObject doorLock;
 
     private void Start()
@@ -19,6 +19,10 @@ public class Door : MonoBehaviour
         closedRotation = transform.rotation;
         openRotation = Quaternion.Euler(transform.eulerAngles + new Vector3(0, 90, 0));
         playerScript = playerReference.GetComponent<PlayerMovement>();
+        if (doorLock != null)
+        {
+            locked = true;
+        }
     }
 
     private void OnMouseDown()

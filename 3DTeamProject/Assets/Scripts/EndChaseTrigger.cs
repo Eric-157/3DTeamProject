@@ -22,11 +22,6 @@ public class EndChaseTrigger : MonoBehaviour
         jumpscareScript = jumpscareTrigger.GetComponent<Jumpscare>();
     }
 
-    void Update()
-    {
-        float fractionOfJourney = ((Time.time - startTime)) / 6;
-    }
-
     // Update is called once per frame
     private void OnTriggerEnter(Collider other)
     {
@@ -65,12 +60,24 @@ public class EndChaseTrigger : MonoBehaviour
         yield return new WaitForSeconds(delay);
         camMove.allowMouseControl = true;
         jumpscareScript.animDone = true;
+        Destroy(this);
+        Destroy(enemy);
     }
 
     private IEnumerator DoorClose(float delay)
     {
-        door.transform.position = new Vector3(door.transform.position.x, door.transform.position.y - 6, door.transform.position.z);
-        //door.transform.position = Vector3.Lerp(startPosition, endPosition, fractionOfJourney);
-        yield return new WaitForSeconds(delay);
+        Vector3 startPos = door.transform.position;
+        Vector3 targetPos = endPosition;
+        float elapsed = 0f;
+
+        while (elapsed < lookDuration)
+        {
+            elapsed += Time.deltaTime;
+            float t = Mathf.Clamp01(elapsed / lookDuration);
+            door.transform.position = Vector3.Lerp(startPos, targetPos, t);
+            yield return null;
+        }
+
+        door.transform.position = targetPos;
     }
 }

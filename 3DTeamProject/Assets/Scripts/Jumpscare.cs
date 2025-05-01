@@ -4,7 +4,7 @@ using System.Collections;
 public class Jumpscare : MonoBehaviour
 {
     public GameObject objectToSpawn;     // Assign in Inspector
-    public float spawnDistanceBehind = 2f;
+    public float spawnDistanceBehind = 3f;
     public float lookDuration = 2f;
     public bool animDone = true;
 
@@ -16,7 +16,7 @@ public class Jumpscare : MonoBehaviour
             if (playerRoot == null) return;
 
             Vector3 spawnPosition = playerRoot.position - playerRoot.forward * spawnDistanceBehind;
-            GameObject spawnedObject = Instantiate(objectToSpawn, spawnPosition, Quaternion.identity);
+            GameObject spawnedObject = Instantiate(objectToSpawn, spawnPosition, Quaternion.Euler(0, 90, 0));
             animDone = false;
 
             Camera playerCamera = playerRoot.GetComponentInChildren<Camera>();
@@ -45,5 +45,6 @@ public class Jumpscare : MonoBehaviour
         yield return new WaitForSeconds(delay);
         camMove.allowMouseControl = true;
         animDone = true;
+        Destroy(this);
     }
 }

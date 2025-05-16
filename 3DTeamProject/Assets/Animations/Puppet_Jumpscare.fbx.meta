@@ -1,0 +1,169 @@
+fileFormatVersion: 2
+guid: 4a4ae6cbd88fba24fb543aa72c5840b2
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton:
+    - name: PuppetMonsterV3(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LeftMaskSad
+      parentName: PuppetMonsterV3(Clone)
+      position: {x: -1.8894024, y: 28.805416, z: 2.7921607}
+      rotation: {x: 0.045959033, y: -0.7549169, z: -0.05321026, w: 0.65204066}
+      scale: {x: 0.01, y: 0.01, z: 0.01}
+    - name: transform2
+      parentName: LeftMaskSad
+      position: {x: -1681.7974, y: -933.18243, z: -573.891}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FrontMaskHappy
+      parentName: PuppetMonsterV3(Clone)
+      position: {x: -0.3929367, y: 28.664146, z: 4.3733993}
+      rotation: {x: 0.07490781, y: -0, z: -0, w: 0.9971905}
+      scale: {x: 0.01, y: 0.01, z: 0.01}
+    - name: transform3
+      parentName: FrontMaskHappy
+      position: {x: -2185.5415, y: -940.3165, z: -601.17017}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Puppet
+      parentName: PuppetMonsterV3(Clone)
+      position: {x: -0.37383518, y: 16.037113, z: 3.2246537}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.01, y: 0.01, z: 0.01}
+    - name: transform5
+      parentName: Puppet
+      position: {x: 0.000713559, y: 411.7185, z: -14.17701}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: RightMaskSadUPSD
+      parentName: PuppetMonsterV3(Clone)
+      position: {x: 1.2029457, y: 29.168926, z: 2.4745421}
+      rotation: {x: 0.7369118, y: -0.04115257, z: 0.67315215, w: -0.0461919}
+      scale: {x: 0.01, y: 0.01, z: 0.01}
+    - name: transform4
+      parentName: RightMaskSadUPSD
+      position: {x: -1681.7974, y: -933.18243, z: -573.891}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: BackMaskHappyUPSD
+      parentName: PuppetMonsterV3(Clone)
+      position: {x: -0.35437775, y: 29.423958, z: 0.6682019}
+      rotation: {x: 0.99587864, y: 0.012901834, z: -0.04892697, w: -0.07526893}
+      scale: {x: 0.01, y: 0.01, z: 0.01}
+    - name: transform1
+      parentName: BackMaskHappyUPSD
+      position: {x: -2185.5415, y: -940.3166, z: -601.17017}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Puppet1
+      parentName: PuppetMonsterV3(Clone)
+      position: {x: -0.3738351, y: 16.753853, z: 2.4395494}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.01, y: 0.01, z: 0.01}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

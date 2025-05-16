@@ -4,23 +4,23 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    private float speed = 25.0f;
-    public float horizontalInput;
-    public float verticalInput;
+    public float speed = 25.0f;
     public Rigidbody rb;
-    private Jumpscare jumpscareScript;
     public GameObject jumpscareTrigger;
+    public Transform playerCamera; // Assign your camera in the Inspector
 
+    private Jumpscare jumpscareScript;
     public int itemsFound;
 
-    // Start is called before the first frame update
+    private float horizontalInput;
+    private float verticalInput;
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         jumpscareScript = jumpscareTrigger.GetComponent<Jumpscare>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (jumpscareScript.animDone == true)
@@ -28,7 +28,30 @@ public class PlayerMovement : MonoBehaviour
             verticalInput = Input.GetAxis("Vertical");
             horizontalInput = Input.GetAxis("Horizontal");
 
-            rb.MovePosition(transform.position + (transform.forward * verticalInput * speed * Time.deltaTime) + (transform.right * horizontalInput * speed * Time.deltaTime));
+            // Get camera forward and right, but zero out the Y to keep movement horizontal
+            Vector3 camForward = playerCamera.forward;
+            camForward.y = 0;
+            camForward.Normalize();
+
+            Vector3 camRight = playerCamera.right;
+            camRight.y = 0;
+            camRight.Normalize();
+
+            // Combine inputs and directions
+            Vector3 moveDirection = (camForward * verticalInput + camRight * horizontalInput).normalized;
+
+            if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
+            {
+                rb.velocity = moveDirection * speed + new Vector3(0, rb.velocity.y, 0);
+            }
+            else
+            {
+                rb.velocity = new Vector3(0, 0, 0);
+            }
+        }
+        else
+        {
+            rb.velocity = new Vector3(0, 0, 0);
         }
 
         if (Input.GetKey(KeyCode.Escape))

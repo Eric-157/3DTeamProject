@@ -27,7 +27,7 @@ public class Door : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (ItemsNeeded == playerScript.itemsFound && locked == true)
+        if (ItemsNeeded >= playerScript.itemsFound && locked == true)
         {
             locked = false;
             Destroy(doorLock);
